@@ -1,0 +1,54 @@
+---
+import Button from "../components/Button.astro";
+import Navbar from "../components/Navbar.astro";
+import RadialProgress from "../components/RadialProgress.astro";
+import TestScore from "../components/TestScore.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Navbar />
+        
+        <div class="grid grid-cols-4 gap-5 justify-center">
+            <div class="bg-slate-100 shadow-md rounded-lg flex flex-col gap-4 justify-center text-center p-5">
+                <img src="../../png/level-1-certificate.jpeg" class="rounded-lg">
+                <div>
+                    <div class="font-semibold text-xl">YoungWonks Level 1 Certificate</div>
+                    <div>Python</div>
+                </div>
+                <div>
+                    <Button text="Learn more" />
+                </div>
+            </div>
+            <div class="bg-slate-100 shadow-md rounded-lg flex flex-col gap-4 justify-center text-center p-5">
+                <img src="../../png/level-2-certificate.png" class="rounded-lg">
+                <div>
+                    <div class="font-semibold text-xl">YoungWonks Level 2 Certificate</div>
+                    <div>Pygame & GPIO</div>
+                </div>
+                <div>
+                    <Button text="Learn more" />
+                </div>
+            </div>
+            <div class="bg-slate-100 shadow-md rounded-lg flex flex-col gap-4 justify-center text-center p-5">
+                <img src="../../png/level-2-certificate.png" class="rounded-lg">
+                <div>
+                    <div class="font-semibold text-xl">YoungWonks Level 3 Certificate</div>
+                    <div>TkinterUI</div>
+                </div>
+                <div>
+                    <Button text="Learn more" />
+                </div>
+            </div>
+        </div>
+
+
+	</body>
+</html>

@@ -1,0 +1,14 @@
+---
+const { progress, color, text } = Astro.props;
+---
+
+<div class="w-32 h-32 relative">
+    <svg class="w-full h-full" viewBox="0 0 100 100">
+      <!-- <circle class={`stroke-current ${color}`} cx="50" cy="50" r="45" stroke-width="5" fill="none" stroke="transparent" /> -->
+      <circle class="stroke-current text-slate-100" cx="50" cy="50" r="45" stroke-width="5" fill="none" stroke="transparent" />
+      <circle class={`stroke-current ${color}`} cx="50" cy="50" r="45" stroke-width="5" fill="none" stroke-dasharray={2 * Math.PI * 45} stroke-dashoffset={(1 - progress) * (2 * Math.PI * 45)} transform="rotate(-90 50 50)" />
+    </svg>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <span class="text-4xl font-semibold text-gray-800">{text}</span>
+    </div>
+</div>
