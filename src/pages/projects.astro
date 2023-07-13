@@ -3,28 +3,11 @@ import Button from "../components/Button.astro";
 import Navbar from "../components/Navbar.astro";
 import RadialProgress from "../components/RadialProgress.astro";
 import TestScore from "../components/TestScore.astro";
+import Page from '../layouts/Page.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Navbar />
-        
-        <h2 class="text-3xl font-semibold">Web Development</h2>
-
-
-
-        <h2 class="text-3xl font-semibold">Game Development</h2>
-
-
-
-        <h2 class="text-3xl font-semibold">Graphic Design</h2>
-
-	</body>
-</html>
+<Page title="Projects">
+	<h2 class="text-3xl font-semibold">Web Development</h2>-
+    <h2 class="text-3xl font-semibold">Game Development</h2>
+    <h2 class="text-3xl font-semibold">Graphic Design</h2>
+</Page>

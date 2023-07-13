@@ -1,20 +1,11 @@
 ---
 import Button from "../components/Button.astro";
 import Navbar from "../components/Navbar.astro";
+import Page from '../layouts/Page.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Navbar />
-		
-		<div class="px-5">
+<Page title="Qualifications">
+	<div class="px-5">
 			<h2 class="text-3xl font-semibold mb-5">Skills</h2>
 			<h2 class="text-3xl font-semibold mb-5">Certificates</h2>
 			<div class="grid grid-cols-4 gap-5 justify-center">
@@ -50,5 +41,4 @@ import Navbar from "../components/Navbar.astro";
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+</Page>
