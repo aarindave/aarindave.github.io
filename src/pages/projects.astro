@@ -8,14 +8,33 @@ import Page from '../layouts/Page.astro';
 <Page title="Projects">
 	<h2 class="text-3xl font-semibold mb-3">Web Development</h2>
 
-    <div class="grid grid-cols-4 mb-3">
+    <div class="grid grid-cols-4 gap-4 mb-8">
         <Card>
             <img src="../../png/astrofly.png">
             <p>Astrofly is a website.</p>
-            <Button text="Visit project" />
+            <Button text="Visit project" link="astrofly.netlify.app" />
         </Card>
     </div>
 
-    <h2 class="text-3xl font-semibold">Game Development</h2>
-    <h2 class="text-3xl font-semibold">Graphic Design</h2>
+    <h2 class="text-3xl font-semibold mb-3">Game Development</h2>
+
+    <div class="grid grid-cols-4 gap-4 mb-4">
+        <Card>
+            <img src="../../png/neon-league.png">
+            <p>Neon League is a game.</p>
+            <Button text="Visit project" link="https://gamerlots.itch.io/neon-league" />
+            <Button text="Download portfolio" link="https://gamerlots.itch.io/neon-league" />
+        </Card>
+        <Card>
+            <img src="../../png/cosmodark.png">
+            <p>Cosmodark is a game.</p>
+            <Button text="Visit project" link="https://gamerlots.itch.io/cosmodark" />
+            <Button text="Download portfolio" link="https://gamerlots.itch.io/neon-league" />
+        </Card>
+    </div>
+
+    <h2 class="text-3xl font-semibold mb-3">Graphic Design</h2>
+
+
+
 </Page>
