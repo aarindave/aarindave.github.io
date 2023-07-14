@@ -6,39 +6,79 @@ import Page from '../layouts/Page.astro';
 
 <Page title="Qualifications">
 	<div class="px-5">
-			<h2 class="text-3xl font-semibold mb-5">Skills</h2>
-			<h2 class="text-3xl font-semibold mb-5">Certificates</h2>
-			<div class="grid grid-cols-4 gap-5 justify-center">
-				<Card>
-					<img src="../../png/level-1-certificate.jpeg" class="rounded-lg">
-					<div>
-						<div class="font-semibold text-xl">YoungWonks Level 1 Certificate</div>
-						<div>Python</div>
-					</div>
-					<div>
-						<Button text="Learn more" link="https://www.youngwonks.com/python-programming" />
-					</div>
-				</Card>
-				<Card>
-					<img src="../../png/level-2-certificate.png" class="rounded-lg">
-					<div>
-						<div class="font-semibold text-xl">YoungWonks Level 2 Certificate</div>
-						<div>Pygame & GPIO</div>
-					</div>
-					<div>
-						<Button text="Learn more" link="https://www.youngwonks.com/arduino-raspberry-pi-coding" />
-					</div>
-				</Card>
-				<Card>
-					<img src="../../png/level-2-certificate.png" class="rounded-lg">
-					<div>
-						<div class="font-semibold text-xl">YoungWonks Level 3 Certificate</div>
-						<div>TkinterUI</div>
-					</div>
-					<div>
-						<Button text="Learn more" link="https://www.youngwonks.com/robotics-programming-for-kids" />
-					</div>
-				</Card>
-			</div>
+		<h2 class="text-3xl font-semibold mb-5">Skills</h2>
+		<h3 class="text-2xl font-semibold mb-3">Programming Languages</h3>
+		<div class="mb-5 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+			<Card>
+				<div class="flex justify-center items-center gap-4 text-lg font-semibold">
+					C#
+					<img class="h-12 aspect-square" src="../../png/c-sharp.png">
+				</div>
+			</Card>
+			<Card>
+				<div class="flex justify-center items-center gap-4 text-lg font-semibold">
+					Dart
+					<img class="h-12 aspect-square" src="../../png/dart.png">
+				</div>
+			</Card>
+			<Card>
+				<div class="flex justify-center items-center gap-4 text-lg font-semibold">
+					Java
+					<img class="h-12 aspect-square" src="../../png/java.png">
+				</div>
+			</Card>
+			<Card>
+				<div class="flex justify-center items-center gap-4 text-lg font-semibold">
+					JavaScript
+					<img class="h-12 aspect-square" src="../../png/javascript.png">
+				</div>
+			</Card>
+			<Card>
+				<div class="flex justify-center items-center gap-4 text-lg font-semibold">
+					Python
+					<img class="h-12 aspect-square" src="../../png/python.png">
+				</div>
+			</Card>
+			<Card>
+				<div class="flex justify-center items-center gap-4 text-lg font-semibold">
+					TypeScript
+					<img class="h-12 aspect-square" src="../../svg/typescript.svg">
+				</div>
+			</Card>
 		</div>
+
+		<h2 class="text-3xl font-semibold mb-5">Certificates</h2>
+		<div class="grid grid-cols-1 gap-5 justify-center md:grid-cols-2 lg:grid-cols-3">
+			<Card>
+				<img src="../../jpeg/level-1-certificate.jpeg" class="rounded-lg">
+				<div>
+					<div class="font-semibold text-xl">YoungWonks Level 1 Certificate</div>
+					<div>Python</div>
+				</div>
+				<div>
+					<Button text="Learn more" link="https://www.youngwonks.com/python-programming" />
+				</div>
+			</Card>
+			<Card>
+				<img src="../../png/level-2-certificate.png" class="rounded-lg">
+				<div>
+					<div class="font-semibold text-xl">YoungWonks Level 2 Certificate</div>
+					<div>Pygame & GPIO</div>
+				</div>
+				<div>
+					<Button text="Learn more" link="https://www.youngwonks.com/arduino-raspberry-pi-coding" />
+				</div>
+			</Card>
+			<Card>
+				<img src="../../png/level-2-certificate.png" class="rounded-lg">
+				<div>
+					<div class="font-semibold text-xl">YoungWonks Level 3 Certificate</div>
+					<div>TkinterUI</div>
+				</div>
+				<div>
+					<Button text="Learn more" link="https://www.youngwonks.com/robotics-programming-for-kids" />
+				</div>
+			</Card>
+		</div>
+	</div>
 </Page>
