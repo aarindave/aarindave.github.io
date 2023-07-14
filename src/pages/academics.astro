@@ -1,5 +1,6 @@
 ---
 import Button from "../components/Button.astro";
+import CourseList from "../components/CourseList.astro";
 import TestScore from "../components/TestScore.astro";
 import Page from "../layouts/Page.astro";
 ---
@@ -7,50 +8,32 @@ import Page from "../layouts/Page.astro";
 <Page title="Academics">
 	<div class="px-7">
 		<div class="flex items-center">
-			<span class="font-semibold text-3xl mr-5">Transcript</span>
+			<span class="font-semibold text-3xl mr-5 whitespace-nowrap">High School Courses</span>
 			<hr class="border-black border-2 w-full">
 		</div>
-		<div class="rounded-sm">
-			<table class="table-fixed text-center my-5">
-				<thead class="bg-gray-800 text-white">
-					<tr>
-						<th class="p-3">Course Name</th>
-						<th class="p-3">Mark</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="bg-gray-200 text-black">
-						<td class="p-3">9th Lit/Comp Honors</td>
-						<td class="p-3">97</td>
-					</tr>
-					<tr class="bg-gray-200 text-black">
-						<td class="p-3">Algebra I Honors</td>
-						<td class="p-3">100</td>
-					</tr>
-					<tr class="bg-gray-200 text-black">
-						<td class="p-3">Physical Science Honors</td>
-						<td class="p-3">100</td>
-					</tr>
-				</tbody>
-			</table>
+
+		<div class="grid grid-cols-3 gap-5">
+			<CourseList />
+			<CourseList />
 		</div>
+
 	</div>
-	<div class="px-7">
+	<div class="px-7 mt-5">
 		<div class="flex items-center">
-			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">SAT and ACT</h2>
+			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">Standardized Tests</h2>
+			<hr class="border-black border-2 w-full">
+		</div>
+		<div class="grid grid-cols-3 gap-7 mt-5">
+			<TestScore testName="SAT" date="March 2023" score="1330" minScore="400" maxScore="1600" color="text-lime-500" />
+			<TestScore testName="PSAT" date="October 2022" score="1330" minScore="400" maxScore="1520" color="text-lime-500" />
+		</div>
+		<div class="flex items-center mt-5">
+			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">Advanced Placement® Exams</h2>
 			<hr class="border-black border-2 w-full">
 		</div>
 		<div class="grid grid-cols-3 gap-7 mt-5">
 			<TestScore testName="AP Computer Science A" date="May 2023" score="5" minScore="0" maxScore="5" color="text-green-500" />
 			<TestScore testName="AP US Government" date="May 2023" score="4" minScore="0" maxScore="5" color="text-lime-500" />
-			<TestScore testName="SAT" date="March 2023" score="1330" minScore="400" maxScore="1600" color="text-lime-500" />
-		</div>
-		<div class="flex items-center mt-5">
-			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">AP Exams</h2>
-			<hr class="border-black border-2 w-full">
-		</div>
-		<div class="grid grid-cols-3 gap-7 mt-5">
-			<TestScore testName="PSAT" date="October 2022" score="1330" minScore="400" maxScore="1520" color="text-lime-500" />
 		</div>
 	</div>
 </Page>

@@ -1,0 +1,43 @@
+---
+const { subject, courseGrades, color="bg-white" } = Astro.props;
+---
+
+<div class="border border-gray-300 rounded mt-5">
+    <div class={"bg-white text-white flex items-center justify-between px-4 py-2 cursor-pointer expandable"}>
+        <div class="text-lg font-bold">{subject}</div>
+        <div>&#x25BE;</div>
+    </div>
+    <div class="px-4 py-2 hidden">
+        <table class="w-full mt-2">
+            <thead>
+                <tr>
+                    <th class="py-2 text-left">Course</th>
+                    <th class="py-2 text-left">Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-2">Course 1</td>
+                    <td class="py-2">97</td>
+                </tr>
+                <tr>
+                    <td class="py-2">Course 2</td>
+                    <td class="py-2">94</td>
+                </tr>
+                <tr>
+                    <td class="py-2">Course 3</td>
+                    <td class="py-2">98</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    const expandableDivs = document.getElementsByClassName("expandable");
+	for (let divElement of expandableDivs) {
+		divElement.addEventListener("click", () => {
+			divElement.nextElementSibling?.classList.toggle("hidden");
+		});
+	}
+</script>
