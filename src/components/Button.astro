@@ -1,7 +1,7 @@
 ---
-const { text, link } = Astro.props;
+const { link } = Astro.props;
 ---
 
-<a href={link} target="_blank" class="bg-blue-700 rounded-md px-3 py-2 text-white flex justify-center items-center gap-3 font-semibold hover:cursor-pointer">
-	{text}
+<a href={link} target="_blank" class="bg-blue-700 rounded-md px-3 py-2 text-white flex justify-center items-center gap-2 font-semibold drop-shadow-lg hover:cursor-pointer">
+	<slot />
 </a>
