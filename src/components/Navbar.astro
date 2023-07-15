@@ -1,18 +1,35 @@
-<div class="flex items-center">
+<div class="flex items-center drop-shadow-xl sticky">
     <div class="p-3">
         <a href="/">
             <img src="../../png/brand.png" class="h-12">
         </a>
     </div>
-    <div class="text-center flex flex-1 justify-end gap-5 p-3">
-        <a class="navbar-link" href="/">Home</a>
-        <a class="navbar-link" href="/about-me/">About Me</a>
-        <a class="navbar-link" href="/academics/">Academics</a>
-        <a class="navbar-link" href="/honors/">Honors</a>
-        <a class="navbar-link" href="/projects/">Projects</a>
-        <a class="navbar-link" href="/extracurriculars/">Extracurriculars</a>
-        <a class="navbar-link" href="/qualifications/">Qualifications</a>
-        <a class="navbar-link" href="/testimonials/">Testimonials</a>
-        <a class="navbar-link" href="/contact-me/">Contact Me</a>
+    <div class="text-center flex flex-1 justify-end">
+        <div id="navbar-links" class="p-3 hidden lg:flex gap-5">
+            <a class="navbar-link" href="/">Home</a>
+            <a class="navbar-link" href="/about-me/">About Me</a>
+            <a class="navbar-link" href="/academics/">Academics</a>
+            <a class="navbar-link" href="/honors/">Honors</a>
+            <a class="navbar-link" href="/projects/">Projects</a>
+            <a class="navbar-link" href="/extracurriculars/">Extracurriculars</a>
+            <a class="navbar-link" href="/qualifications/">Qualifications</a>
+            <a class="navbar-link" href="/testimonials/">Testimonials</a>
+            <a class="navbar-link" href="/contact-me/">Contact Me</a>
+        </div>
+        <div id="hamburger-icon" class="p-3 block transition-transform lg:hidden hover:cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
     </div>
 </div>
+
+<script>
+    const navbarLinks = document.getElementById("navbar-links");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    
+    hamburgerIcon?.addEventListener("click", () => {
+        hamburgerIcon.classList.toggle("rotate-90");
+        console.log("Bundle.");
+    })
+</script>
