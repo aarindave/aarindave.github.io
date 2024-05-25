@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gamerlots.github.io',
+  site: 'https://aarindave.github.io',
   integrations: [tailwind()]
 });
