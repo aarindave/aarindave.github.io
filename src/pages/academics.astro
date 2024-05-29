@@ -8,36 +8,69 @@ import Page from "../layouts/Page.astro";
 <Page title="Academics | Aarin Dave">
 	<div class="px-7">
 		<div class="flex items-center">
-			<span class="font-semibold text-3xl mr-5 whitespace-nowrap">High School Courses</span>
-			<hr class="border-black border-2 w-full">
+			<span class="font-semibold text-3xl mr-5 whitespace-nowrap"
+				>High School Courses</span
+			>
+			<hr class="border-black border-2 w-full" />
 		</div>
 
 		<div class="grid grid-cols-3 gap-5">
-			<div>
-				7 APs
+			<div class="bg-red-500 text-white px-4 py-2 rounded-lg">
+				<span class="text-3xl font-semibold">7</span> APs
 			</div>
-			<div>
-				4 DEs
+			<div class="bg-yellow-400 text-black px-4 py-2 rounded-lg">
+				<span class="text-3xl font-semibold">2</span> DEs
 			</div>
 		</div>
-
 	</div>
 	<div class="px-7 mt-5">
 		<div class="flex items-center">
-			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">Standardized Tests</h2>
-			<hr class="border-black border-2 w-full">
+			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">
+				Standardized Tests
+			</h2>
+			<hr class="border-black border-2 w-full" />
 		</div>
 		<div class="grid grid-cols-3 gap-7 mt-5">
-			<TestScore testName="SAT" date="March 2024" score="1470" minScore="400" maxScore="1600" color="text-green-500" />
-			<TestScore testName="PSAT" date="October 2024" score="1470" minScore="400" maxScore="1520" color="text-green-500" />
+			<TestScore
+				testName="SAT"
+				date="March 2024"
+				score="1470"
+				minScore="400"
+				maxScore="1600"
+				color="text-green-500"
+			/>
+			<TestScore
+				testName="PSAT"
+				date="October 2024"
+				score="1470"
+				minScore="400"
+				maxScore="1520"
+				color="text-green-500"
+			/>
 		</div>
 		<div class="flex items-center mt-5">
-			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">Advanced Placement® Exams</h2>
-			<hr class="border-black border-2 w-full">
+			<h2 class="font-semibold text-3xl mr-5 whitespace-nowrap">
+				Advanced Placement® Exams
+			</h2>
+			<hr class="border-black border-2 w-full" />
 		</div>
 		<div class="grid grid-cols-3 gap-7 mt-5">
-			<TestScore testName="AP Computer Science A" date="May 2023" score="5" minScore="0" maxScore="5" color="text-green-500" />
-			<TestScore testName="AP US Government" date="May 2023" score="4" minScore="0" maxScore="5" color="text-lime-500" />
+			<TestScore
+				testName="AP Computer Science A"
+				date="May 2023"
+				score="5"
+				minScore="0"
+				maxScore="5"
+				color="text-green-500"
+			/>
+			<TestScore
+				testName="AP US Government"
+				date="May 2023"
+				score="4"
+				minScore="0"
+				maxScore="5"
+				color="text-lime-500"
+			/>
 		</div>
 	</div>
 </Page>
