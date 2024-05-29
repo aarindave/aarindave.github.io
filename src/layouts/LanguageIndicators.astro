@@ -1,0 +1,9 @@
+---
+import LanguageIndicator from "../components/LanguageIndicator.astro";
+
+const { languages } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-1">
+    { languages.map((language: string) => <LanguageIndicator language={language}/>) }
+</div>

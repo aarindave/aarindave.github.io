@@ -1,0 +1,8 @@
+---
+const { language } = Astro.props;
+---
+
+<div class="bg-blue-100 px-2 py-1 rounded-full flex justify-start items-center gap-1">
+	<img class="aspect-square w-5" src={`https://raw.githubusercontent.com/devicons/devicon/master/icons/${language.toLowerCase()}/${language.toLowerCase()}-original.svg`}/>
+	<span class="font-semibold">{ language }</span>
+</div>

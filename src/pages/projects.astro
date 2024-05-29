@@ -2,6 +2,7 @@
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import Navbar from "../components/Navbar.astro";
+import LanguageIndicators from "../layouts/LanguageIndicators.astro";
 import Page from '../layouts/Page.astro';
 ---
 
@@ -10,7 +11,8 @@ import Page from '../layouts/Page.astro';
     <div class="grid grid-cols-4 gap-4 mb-8">
         <Card>
             <img src="../../png/astrofly.png">
-            <p>Astrofly is a website.</p>
+            <p>Astrofly is a website for a fictitious company offering space tourism services.</p>
+            <LanguageIndicators languages={["HTML5", "CSS3", "JavaScript"]}/>
             <Button link="https://astrofly.netlify.app">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -21,6 +23,7 @@ import Page from '../layouts/Page.astro';
         <Card>
             <img src="../../png/astrofly.png">
             <p>Evenue is a website.</p>
+            <LanguageIndicators languages={["HTML5", "CSS3", "JavaScript"]}/>
             <Button link="https://astrofly.netlify.app">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -66,6 +69,7 @@ import Page from '../layouts/Page.astro';
         <Card>
             <img src="../../png/neon-league.png">
             <p>Glioblasted</p>
+            <LanguageIndicators languages={["Flutter", "Dart", "Firebase"]} />
             <Button link="https://gamerlots.itch.io/neon-league">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -82,6 +86,7 @@ import Page from '../layouts/Page.astro';
         <Card>
             <img src="../../png/neon-league.png">
             <p>ICUSpeak</p>
+            <LanguageIndicators languages={["Flutter", "Dart", "Firebase"]}/>
             <Button link="https://gamerlots.itch.io/neon-league">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -98,6 +103,7 @@ import Page from '../layouts/Page.astro';
         <Card>
             <img src="../../png/neon-league.png">
             <p>Flight Booking Application</p>
+            <LanguageIndicators languages={["Flutter", "Dart", "Firebase"]} />
             <Button link="https://gamerlots.itch.io/neon-league">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -114,6 +120,7 @@ import Page from '../layouts/Page.astro';
         <Card>
             <img src="../../png/neon-league.png">
             <p>Safeology</p>
+            <LanguageIndicators languages={["Flutter", "Dart", "Firebase"]} />
             <Button link="https://gamerlots.itch.io/neon-league">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -130,6 +137,7 @@ import Page from '../layouts/Page.astro';
         <Card>
             <img src="../../png/cosmodark.png">
             <p>LifeLearn</p>
+            <LanguageIndicators languages={["Flutter", "Dart", "Firebase"]} />
             <Button link="https://gamerlots.itch.io/cosmodark">Visit project</Button>
             <Button link="https://gamerlots.itch.io/neon-league">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
